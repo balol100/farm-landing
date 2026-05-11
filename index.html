@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>החווה לחינוך חקלאי באר שבע — מארזים ומוצרים מתוצרת החווה</title>
+<meta name="description" content="מארזים ומוצרים בעבודת יד מהחווה לחינוך חקלאי בבאר שבע — יין, משחות, תרסיסים, שמנים, צמחי תבלין וחליטות. מתאים לצוותי חינוך, בתי ספר ומתנות חג." />
+<meta name="theme-color" content="#2D5016" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌿%3C/text%3E%3C/svg%3E" />
+<style>
+  :root {
+    --green-deep: #2D5016;
+    --green-mid: #4A7C2E;
+    --green-soft: #7BA05B;
+    --cream: #FEFCF6;
+    --cream-warm: #F5F0E8;
+    --cream-deep: #EDE4D3;
+    --brown: #8B6914;
+    --brown-soft: #A8854C;
+    --gold: #C9A84C;
+    --gold-soft: #E0C77A;
+    --text: #2F2A1F;
+    --text-soft: #5C5240;
+    --shadow: 0 10px 40px -10px rgba(74, 124, 46, 0.18);
+    --shadow-sm: 0 4px 18px -6px rgba(74, 124, 46, 0.18);
+    --radius: 22px;
+    --radius-lg: 32px;
+    --transition: cubic-bezier(.22, .9, .32, 1);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Heebo', system-ui, -apple-system, sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+    font-weight: 400;
+  }
+
+  /* Subtle natural background pattern */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 12% 8%, rgba(123, 160, 91, 0.08), transparent 45%),
+      radial-gradient(ellipse at 88% 90%, rgba(201, 168, 76, 0.07), transparent 45%),
+      radial-gradient(ellipse at 50% 50%, rgba(74, 124, 46, 0.03), transparent 60%);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  img { max-width: 100%; display: block; }
+
+  a { color: inherit; text-decoration: none; }
+
+  button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+  .container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 22px;
+  }
+
+  /* ========== Skip link / accessibility ========== */
+  .skip-link {
+    position: absolute;
+    top: -100px;
+    right: 16px;
+    background: var(--green-deep);
+    color: var(--cream);
+    padding: 12px 20px;
+    border-radius: 10px;
+    z-index: 9999;
+    font-weight: 600;
+  }
+  .skip-link:focus { top: 16px; }
+
+  /* ========== Header ========== */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(254, 252, 246, 0.85);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(74, 124, 46, 0.12);
+  }
+  .site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    color: var(--green-deep);
+    font-size: 1.05rem;
+  }
+  .logo-mark {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--green-mid), var(--green-deep));
+    display: grid;
+    place-items: center;
+    color: var(--cream);
+    font-size: 1.3rem;
+    box-shadow: 0 4px 14px -4px rgba(45, 80, 22, 0.4);
+  }
+  .nav-cta {
+    background: var(--green-deep);
+    color: var(--cream);
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    transition: all 0.25s var(--transition);
+    box-shadow: 0 4px 12px -4px rgba(45, 80, 22, 0.4);
+  }
+  .nav-cta:hover { background: var(--green-mid); transform: translateY(-2px); }
+
+  /* ========== Hero ========== */
+  .hero {
+    position: relative;
+    padding: 80px 0 100px;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .leaf {
+    position: absolute;
+    opacity: 0.12;
+    font-size: 7rem;
+    user-select: none;
+    pointer-events: none;
+  }
+  .leaf-1 { top: 8%; right: 5%; transform: rotate(-15deg); }
+  .leaf-2 { bottom: 12%; left: 4%; transform: rotate(25deg); font-size: 5rem; }
+  .leaf-3 { top: 30%; left: 8%; transform: rotate(45deg); font-size: 4rem; opacity: 0.08; }
+  .leaf-4 { bottom: 30%; right: 10%; transform: rotate(-30deg); font-size: 4.5rem; opacity: 0.1; }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: var(--cream-warm);
+    border: 1px solid rgba(139, 105, 20, 0.2);
+    color: var(--brown);
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 999px;
+    margin-bottom: 26px;
+    letter-spacing: 0.02em;
+  }
+  .eyebrow::before {
+    content: '🌾';
+    font-size: 1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 6vw, 4.2rem);
+    font-weight: 800;
+    color: var(--green-deep);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+  }
+  .hero h1 .accent {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--gold);
+    font-size: 0.5em;
+    margin-top: 14px;
+    letter-spacing: 0.04em;
+  }
+  .hero .tagline {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    color: var(--brown);
+    font-weight: 500;
+    margin-bottom: 18px;
+    font-style: italic;
+  }
+  .hero .subtitle {
+    font-size: clamp(1rem, 1.6vw, 1.18rem);
+    color: var(--text-soft);
+    max-width: 620px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+  }
+
+  .cta-group {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 30px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: all 0.3s var(--transition);
+    text-align: center;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    box-shadow: 0 10px 28px -8px rgba(18, 140, 126, 0.5);
+  }
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px -8px rgba(18, 140, 126, 0.55);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--green-deep);
+    border: 2px solid var(--green-deep);
+  }
+  .btn-secondary:hover {
+    background: var(--green-deep);
+    color: var(--cream);
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-num {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--green-deep);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.88rem;
+    color: var(--text-soft);
+    margin-top: 6px;
+  }
+  .stat-divider {
+    width: 1px;
+    background: linear-gradient(transparent, rgba(139, 105, 20, 0.25), transparent);
+  }
+  @media (max-width: 540px) {
+    .stat-divider { display: none; }
+    .hero-stats { gap: 24px; }
+  }
+
+  /* ========== Section base ========== */
+  section {
+    padding: 90px 0;
+    position: relative;
+  }
+  .section-head {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 60px;
+  }
+  .section-eyebrow {
+    display: inline-block;
+    color: var(--brown);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .section-head h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--green-deep);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin-bottom: 16px;
+  }
+  .section-head p {
+    color: var(--text-soft);
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  /* Decorative divider */
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 28px auto;
+    color: var(--gold);
+    font-size: 1.3rem;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: linear-gradient(to var(--dir, right), transparent, var(--gold-soft));
+  }
+  .divider::after { --dir: left; }
+
+  /* ========== Products ========== */
+  .products {
+    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-warm) 100%);
+  }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .product-card {
+    background: var(--cream);
+    border-radius: var(--radius-lg);
+    padding: 36px 28px;
+    border: 1px solid rgba(74, 124, 46, 0.12);
+    transition: all 0.4s var(--transition);
+    position: relative;
+    overflow: hidden;
+  }
+  .product-card::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--green-mid), var(--gold));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s var(--transition);
+  }
+  .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+    border-color: rgba(74, 124, 46, 0.25);
+  }
+  .product-card:hover::before { transform: scaleX(1); }
+  .product-icon {
+    font-size: 2.8rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, var(--cream-warm), var(--cream-deep));
+    margin-bottom: 22px;
+    transition: transform 0.4s var(--transition);
+  }
+  .product-card:hover .product-icon { transform: rotate(-6deg) scale(1.05); }
+  .product-card h3 {
+    font-size: 1.35rem;
+    color: var(--green-deep);
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  .product-card p {
+    color: var(--text-soft);
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+  .product-tag {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 6px 14px;
+    background: var(--cream-warm);
+    color: var(--brown);
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+  }
+
+  /* Featured wine card */
+  .product-card.featured {
+    background: linear-gradient(135deg, #3a2510 0%, #5c3a1f 100%);
+    color: var(--cream);
+    grid-column: span 1;
+  }
+  .product-card.featured h3, .product-card.featured p {
+    color: var(--cream);
+  }
+  .product-card.featured .product-icon {
+    background: rgba(201, 168, 76, 0.18);
+  }
+  .product-card.featured p { color: rgba(254, 252, 246, 0.85); }
+  .product-card.featured .product-tag {
+    background: rgba(201, 168, 76, 0.2);
+    color: var(--gold-soft);
+  }
+  @media (min-width: 768px) {
+    .product-card.featured { grid-column: span 2; }
+  }
+
+  /* ========== Why us section ========== */
+  .why {
+    background: var(--cream);
+  }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .why-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px 22px;
+    background: var(--cream-warm);
+    border-radius: var(--radius);
+    border: 1px solid rgba(74, 124, 46, 0.1);
+    transition: all 0.3s var(--transition);
+  }
+  .why-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+    background: var(--cream);
+    border-color: rgba(74, 124, 46, 0.2);
+  }
+  .why-check {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--green-mid), var(--green-deep));
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px -3px rgba(45, 80, 22, 0.4);
+  }
+  .why-text {
+    font-size: 1.05rem;
+    color: var(--text);
+    font-weight: 500;
+    line-height: 1.5;
+    padding-top: 6px;
+  }
+
+  /* ========== Occasions section ========== */
+  .occasions {
+    background: linear-gradient(180deg, var(--cream-warm) 0%, var(--cream) 100%);
+  }
+  .occasions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .occasion {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 26px;
+    background: var(--cream);
+    border: 2px solid rgba(74, 124, 46, 0.18);
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1.02rem;
+    color: var(--green-deep);
+    transition: all 0.3s var(--transition);
+    cursor: default;
+  }
+  .occasion:hover {
+    border-color: var(--gold);
+    background: var(--cream-warm);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+  }
+  .occasion-icon {
+    font-size: 1.3rem;
+  }
+
+  /* ========== Quote/CTA section ========== */
+  .quote-cta {
+    background: var(--cream);
+    text-align: center;
+  }
+  .quote-card {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 70px 40px;
+    background: linear-gradient(135deg, var(--green-deep) 0%, var(--green-mid) 100%);
+    border-radius: var(--radius-lg);
+    color: var(--cream);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 30px 60px -20px rgba(45, 80, 22, 0.35);
+  }
+  .quote-card::before, .quote-card::after {
+    content: '🌿';
+    position: absolute;
+    font-size: 9rem;
+    opacity: 0.1;
+  }
+  .quote-card::before { top: -20px; right: -20px; transform: rotate(-25deg); }
+  .quote-card::after { bottom: -30px; left: -20px; transform: rotate(120deg); }
+  .quote-mark {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    color: var(--gold-soft);
+    line-height: 0.7;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .quote-card blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+    font-style: italic;
+    line-height: 1.4;
+    margin-bottom: 36px;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+  }
+  .quote-card .btn {
+    background: var(--gold);
+    color: var(--green-deep);
+    font-size: 1.15rem;
+    padding: 18px 36px;
+    box-shadow: 0 10px 28px -8px rgba(201, 168, 76, 0.6);
+    position: relative;
+    z-index: 1;
+  }
+  .quote-card .btn:hover {
+    background: var(--gold-soft);
+    transform: translateY(-3px);
+  }
+
+  /* ========== Gallery hint ========== */
+  .gallery-hint {
+    background: var(--cream);
+    padding: 60px 0 80px;
+    text-align: center;
+  }
+  .hint-box {
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 36px 30px;
+    background: var(--cream-warm);
+    border: 2px dashed rgba(139, 105, 20, 0.3);
+    border-radius: var(--radius);
+  }
+  .hint-box .hint-icon {
+    font-size: 2.5rem;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .hint-box h3 {
+    color: var(--green-deep);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .hint-box p {
+    color: var(--text-soft);
+    font-size: 1rem;
+    margin-bottom: 22px;
+  }
+  .hint-box .btn {
+    padding: 12px 24px;
+    font-size: 0.98rem;
+  }
+
+  /* ========== Footer ========== */
+  footer {
+    background: linear-gradient(180deg, var(--green-deep) 0%, #1f3a0f 100%);
+    color: var(--cream);
+    padding: 60px 0 30px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 36px;
+    margin-bottom: 36px;
+  }
+  .footer-col h4 {
+    color: var(--gold-soft);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .footer-col p, .footer-col a {
+    color: rgba(254, 252, 246, 0.8);
+    font-size: 0.96rem;
+    line-height: 1.8;
+  }
+  .footer-col a:hover { color: var(--gold-soft); }
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .footer-brand .logo-mark {
+    background: linear-gradient(135deg, var(--gold), var(--brown-soft));
+  }
+  .footer-brand-name {
+    color: var(--cream);
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+  .footer-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .footer-bottom {
+    padding-top: 26px;
+    border-top: 1px solid rgba(254, 252, 246, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-size: 0.88rem;
+    color: rgba(254, 252, 246, 0.65);
+  }
+  .footer-bottom a {
+    color: var(--gold-soft);
+    font-weight: 600;
+  }
+  .footer-bottom a:hover { text-decoration: underline; }
+
+  /* ========== Floating WhatsApp button ========== */
+  .float-wa {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 90;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 1.8rem;
+    box-shadow: 0 8px 24px -4px rgba(18, 140, 126, 0.55);
+    transition: all 0.3s var(--transition);
+    animation: pulse 2.5s infinite;
+  }
+  .float-wa:hover { transform: scale(1.1); }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 8px 24px -4px rgba(18, 140, 126, 0.55), 0 0 0 0 rgba(37, 211, 102, 0.4); }
+    50% { box-shadow: 0 8px 24px -4px rgba(18, 140, 126, 0.55), 0 0 0 14px rgba(37, 211, 102, 0); }
+  }
+
+  /* ========== Accessibility Panel ========== */
+  .a11y-toggle {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 90;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--green-deep);
+    color: var(--cream);
+    display: grid;
+    place-items: center;
+    font-size: 1.4rem;
+    box-shadow: 0 6px 18px -4px rgba(45, 80, 22, 0.5);
+    transition: all 0.3s var(--transition);
+  }
+  .a11y-toggle:hover { transform: scale(1.08); background: var(--green-mid); }
+
+  .a11y-panel {
+    position: fixed;
+    bottom: 88px;
+    right: 24px;
+    z-index: 90;
+    background: var(--cream);
+    border: 1px solid rgba(74, 124, 46, 0.18);
+    border-radius: 18px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 20px 50px -12px rgba(45, 80, 22, 0.3);
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s var(--transition);
+  }
+  .a11y-panel.open {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .a11y-panel h4 {
+    color: var(--green-deep);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(74, 124, 46, 0.12);
+  }
+  .a11y-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 0.92rem;
+    color: var(--text);
+  }
+  .a11y-btn {
+    background: var(--cream-warm);
+    border: 1px solid rgba(74, 124, 46, 0.15);
+    color: var(--green-deep);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  .a11y-btn:hover { background: var(--green-deep); color: var(--cream); }
+  .a11y-btn.active { background: var(--green-deep); color: var(--cream); }
+
+  /* Accessibility modes */
+  body.a11y-large { font-size: 1.18rem; }
+  body.a11y-xlarge { font-size: 1.35rem; }
+  body.a11y-contrast {
+    --cream: #ffffff;
+    --cream-warm: #f8f8f8;
+    --cream-deep: #f0f0f0;
+    --text: #000000;
+    --text-soft: #1a1a1a;
+    --green-deep: #1a3a08;
+    --brown: #5a4408;
+  }
+  body.a11y-reduce-motion *,
+  body.a11y-reduce-motion *::before,
+  body.a11y-reduce-motion *::after {
+    animation-duration: 0.001s !important;
+    transition-duration: 0.001s !important;
+  }
+
+  /* ========== Reveal animations ========== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s var(--transition), transform 0.7s var(--transition);
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ========== Mobile tweaks ========== */
+  @media (max-width: 640px) {
+    .hero { padding: 50px 0 70px; }
+    section { padding: 70px 0; }
+    .quote-card { padding: 50px 26px; }
+    .nav-cta span { display: none; }
+    .nav-cta::after { content: '💬'; }
+    .float-wa { width: 56px; height: 56px; font-size: 1.6rem; bottom: 20px; left: 20px; }
+    .a11y-toggle { width: 48px; height: 48px; font-size: 1.25rem; bottom: 20px; right: 20px; }
+    .a11y-panel { bottom: 78px; right: 20px; width: calc(100% - 40px); max-width: 280px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001s !important;
+      transition-duration: 0.001s !important;
+    }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">דלג לתוכן הראשי</a>
+
+<!-- ========== Header ========== -->
+<header class="site-header">
+  <div class="container">
+    <div class="logo">
+      <div class="logo-mark" aria-hidden="true">🌿</div>
+      <div>
+        <div>החווה לחינוך חקלאי</div>
+        <div style="font-size: 0.75rem; color: var(--brown); font-weight: 500;">באר שבע · מ-2015</div>
+      </div>
+    </div>
+    <a href="https://wa.me/972501234567?text=שלום, אשמח לקבל פרטים על המוצרים של החווה" class="nav-cta" aria-label="צרו קשר בווטסאפ">
+      <span>צרו קשר</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ========== Hero ========== -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="leaf leaf-1">🌿</span>
+    <span class="leaf leaf-2">🍃</span>
+    <span class="leaf leaf-3">🌾</span>
+    <span class="leaf leaf-4">🌱</span>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="eyebrow">החווה לחינוך חקלאי באר שבע</span>
+      <h1>
+        מהאדמה, דרך הידיים<br/>אל הקהילה
+        <span class="accent">Farm Winery · Since 2015</span>
+      </h1>
+      <p class="tagline">"כל מוצר שלנו מספר סיפור — של אדמה, של ילדים, של עשייה"</p>
+      <p class="subtitle">
+        מארזים מיוחדים מתוצרת החווה — יין, משחות, תרסיסים, שמנים וצמחי תבלין.
+        עשויים בעבודת יד על ידי מורי ותלמידי החווה, עם חיבור עמוק לטבע ולקהילה.
+      </p>
+      <div class="cta-group">
+        <a href="https://wa.me/972501234567?text=שלום, אשמח לקבל פרטים ומחירון של המוצרים" class="btn btn-primary">
+          <span>💬</span>
+          <span>דברו איתנו בווטסאפ</span>
+        </a>
+        <a href="#products" class="btn btn-secondary">לצפייה במוצרים</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">2015</span>
+          <span class="stat-label">משנת הקמת היקב</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">תוצרת מקומית</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">7+</span>
+          <span class="stat-label">קטגוריות מוצרים</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Products ========== -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">תוצרת החווה</span>
+      <h2>מה אפשר למצוא אצלנו?</h2>
+      <div class="divider"><span>✦</span></div>
+      <p>כל מוצר נוצר אצלנו בחווה — מהזריעה ועד למארז. בעבודת יד, באהבה, ובחיבור לאדמה.</p>
+    </div>
+
+    <div class="products-grid">
+      <!-- Featured: Wine -->
+      <article class="product-card featured reveal">
+        <div class="product-icon" aria-hidden="true">🍷</div>
+        <h3>יין מהיקב — קברנה מרלו</h3>
+        <p>יין אדום יבש, קברנה־מרלו 2024, בקבוק 750 מ"ל. בוצר בחווה, מותסס וטופל בידי מורי החווה והתלמידים — כל בקבוק נושא איתו את סיפור היקב משנת 2015.</p>
+        <span class="product-tag">Cabernet · Merlot 2024 · 750ml</span>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-icon" aria-hidden="true">🧴</div>
+        <h3>משחת קוקוס טבעית</h3>
+        <p>משחת קוקוס לטיפוח ולטיפול בבעיות עור. בעבודת יד, ברכזת קוקוס איכותית, באריזות זכוכית קטנות ונוחות.</p>
+        <span class="product-tag">בעבודת יד · טבעי</span>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-icon" aria-hidden="true">🌿</div>
+        <h3>תרסיס נגד יתושים</h3>
+        <p>תרסיס טבעי לדחיית יתושים, מורכב מאלכוהול, עשב לימון (לימונית), אזוב (Hyssop) ואקליפטוס לימוני (Citriodora). ללא כימיקלים מיותרים.</p>
+        <span class="product-tag">לימונית · אזוב · אקליפטוס</span>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-icon" aria-hidden="true">💧</div>
+        <h3>שמן עיסוי טבעי</h3>
+        <p>שמן עיסוי לחיזוק המערכת החיסונית. מבוסס שמני אקליפטוס וצמחי מרפא נבחרים, ארוז בבקבוקי טפטפת כהים לשמירה על הסגולות.</p>
+        <span class="product-tag">חיזוק חיסוני · בקבוק טפטפת</span>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-icon" aria-hidden="true">🌱</div>
+        <h3>צמחי תבלין ועציצים</h3>
+        <p>עציצים וצמחי תבלין טריים שגדלו אצלנו בחווה. מושלמים למתנה אישית, לחממת הצוות, או להבאת קצת ירוק למשרד הניהול.</p>
+        <span class="product-tag">צמחיה חיה · גידול עצמי</span>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-icon" aria-hidden="true">🫖</div>
+        <h3>חליטות צמחים</h3>
+        <p>חליטות צמחים ארוזות, ותוצרת מקומית נוספת מהשדה. תערובות מרגיעות, מרעננות ומחזקות — לכוס חמה בחדר המורים.</p>
+        <span class="product-tag">חליטות · תוצרת מקומית</span>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-icon" aria-hidden="true">🎁</div>
+        <h3>מארזים מעוצבים</h3>
+        <p>מארזי מתנה מותאמים אישית — לחגים, ליום המורה, לסוף שנה ולכל אירוע מיוחד. שילובים גמישים של מוצרים, באריזות יפות עם נגיעה אישית.</p>
+        <span class="product-tag">התאמה אישית · אריזות יפות</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Why us ========== -->
+<section class="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">היתרון של החווה</span>
+      <h2>למה דווקא מהחווה?</h2>
+      <div class="divider"><span>✦</span></div>
+      <p>אצלנו המתנה היא לא רק מוצר — היא חלק מסיפור גדול יותר של חינוך, אדמה וקהילה.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <div class="why-check" aria-hidden="true">✓</div>
+        <div class="why-text">תוצרת מקומית עם משמעות — לא מהמדף, מהאדמה</div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-check" aria-hidden="true">✓</div>
+        <div class="why-text">עבודת יד ואווירה אישית בכל פריט</div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-check" aria-hidden="true">✓</div>
+        <div class="why-text">מתאים במיוחד לצוותי חינוך ולמתנות חג</div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-check" aria-hidden="true">✓</div>
+        <div class="why-text">גמישות והתאמה לפי תקציב וכמות</div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-check" aria-hidden="true">✓</div>
+        <div class="why-text">חיבור לערכים של קהילה, טבע ועשייה משותפת</div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-check" aria-hidden="true">✓</div>
+        <div class="why-text">תמיכה ישירה בפעילות חינוכית של החווה</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Occasions ========== -->
+<section class="occasions">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-eyebrow">לכל מאורע</span>
+      <h2>מתאים עבור</h2>
+      <div class="divider"><span>✦</span></div>
+      <p>בין אם זה חג, סוף שנה או הוקרה לצוות — יש לנו את המארז המושלם.</p>
+    </div>
+
+    <div class="occasions-grid">
+      <div class="occasion reveal"><span class="occasion-icon">🎓</span> יום המורה</div>
+      <div class="occasion reveal"><span class="occasion-icon">🍎</span> ראש השנה</div>
+      <div class="occasion reveal"><span class="occasion-icon">🌸</span> פסח</div>
+      <div class="occasion reveal"><span class="occasion-icon">🎁</span> מתנות לצוותים</div>
+      <div class="occasion reveal"><span class="occasion-icon">📚</span> סוף שנה</div>
+      <div class="occasion reveal"><span class="occasion-icon">🏫</span> אירועי בית ספר</div>
+      <div class="occasion reveal"><span class="occasion-icon">🕯️</span> חנוכה</div>
+      <div class="occasion reveal"><span class="occasion-icon">🌷</span> ט"ו בשבט</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Quote / CTA ========== -->
+<section class="quote-cta">
+  <div class="container">
+    <div class="quote-card reveal">
+      <span class="quote-mark" aria-hidden="true">"</span>
+      <blockquote>
+        לא רק מתנה — חוויה עם ערך.
+      </blockquote>
+      <a href="https://wa.me/972501234567?text=שלום, אשמח לקבל פרטים ומחירון של המוצרים של החווה" class="btn">
+        <span>💬</span>
+        <span>דברו איתנו בווטסאפ</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Gallery hint ========== -->
+<section class="gallery-hint">
+  <div class="container">
+    <div class="hint-box reveal">
+      <span class="hint-icon" aria-hidden="true">📸</span>
+      <h3>רוצים לראות את המוצרים?</h3>
+      <p>שלחו לנו הודעה קצרה ונשמח לשלוח אליכם תמונות עדכניות, מחירון, והצעה מותאמת אישית למה שאתם מחפשים.</p>
+      <a href="https://wa.me/972501234567?text=שלום, אשמח לקבל תמונות ומחירון של המוצרים" class="btn btn-primary">
+        <span>💬</span>
+        <span>בקשו תמונות ומחירון</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== Footer ========== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <div class="logo-mark" aria-hidden="true">🌿</div>
+          <span class="footer-brand-name">החווה לחינוך חקלאי</span>
+        </div>
+        <p>חווה חינוכית ויקב באר שבע, מ-2015. מוצרים בעבודת יד של מורים ותלמידים, עם חיבור לטבע ולקהילה.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>יצירת קשר</h4>
+        <p class="footer-contact">
+          <strong>ניהול:</strong> ד"ר אילן אביטבול<br/>
+          <a href="https://wa.me/972501234567">💬 ווטסאפ: 050-1234567</a><br/>
+          <a href="tel:+972501234567">📞 טלפון: 050-1234567</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>מיקום</h4>
+        <p>📍 באר שבע<br/>החווה לחינוך חקלאי</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>קטגוריות</h4>
+        <p>
+          <a href="#products">יין מהיקב</a><br/>
+          <a href="#products">משחות וטיפוח</a><br/>
+          <a href="#products">חליטות וצמחי תבלין</a><br/>
+          <a href="#products">מארזי מתנה</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2025 החווה לחינוך חקלאי באר שבע · כל הזכויות שמורות</div>
+      <div>פותח על ידי <a href="https://lior-ai.com" target="_blank" rel="noopener">lior_Ai</a> 🌿</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/972501234567?text=שלום, אשמח לקבל פרטים על המוצרים" class="float-wa" aria-label="צרו קשר בווטסאפ">💬</a>
+
+<!-- Accessibility -->
+<button class="a11y-toggle" id="a11yToggle" aria-label="פתח תפריט נגישות" aria-expanded="false">♿</button>
+<div class="a11y-panel" id="a11yPanel" role="dialog" aria-label="הגדרות נגישות">
+  <h4>הגדרות נגישות</h4>
+  <div class="a11y-option">
+    <span>גודל טקסט</span>
+    <div>
+      <button class="a11y-btn" data-action="text-normal">רגיל</button>
+      <button class="a11y-btn" data-action="text-large">גדול</button>
+      <button class="a11y-btn" data-action="text-xlarge">ענק</button>
+    </div>
+  </div>
+  <div class="a11y-option">
+    <span>ניגודיות גבוהה</span>
+    <button class="a11y-btn" data-action="contrast">הפעל</button>
+  </div>
+  <div class="a11y-option">
+    <span>הפחתת אנימציה</span>
+    <button class="a11y-btn" data-action="reduce-motion">הפעל</button>
+  </div>
+  <div class="a11y-option" style="justify-content: center; margin-top: 6px;">
+    <button class="a11y-btn" data-action="reset" style="background: var(--cream-deep);">איפוס הכל</button>
+  </div>
+</div>
+
+<script>
+  // Reveal on scroll
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // Accessibility panel
+  const a11yToggle = document.getElementById('a11yToggle');
+  const a11yPanel = document.getElementById('a11yPanel');
+  a11yToggle.addEventListener('click', () => {
+    const isOpen = a11yPanel.classList.toggle('open');
+    a11yToggle.setAttribute('aria-expanded', isOpen);
+  });
+  document.addEventListener('click', (e) => {
+    if (!a11yPanel.contains(e.target) && !a11yToggle.contains(e.target)) {
+      a11yPanel.classList.remove('open');
+      a11yToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Load saved settings
+  const savedSettings = JSON.parse(localStorage.getItem('a11y-settings') || '{}');
+  applySettings(savedSettings);
+
+  document.querySelectorAll('.a11y-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const action = btn.dataset.action;
+      const settings = JSON.parse(localStorage.getItem('a11y-settings') || '{}');
+
+      if (action.startsWith('text-')) {
+        settings.textSize = action.replace('text-', '');
+      } else if (action === 'contrast') {
+        settings.contrast = !settings.contrast;
+      } else if (action === 'reduce-motion') {
+        settings.reduceMotion = !settings.reduceMotion;
+      } else if (action === 'reset') {
+        localStorage.removeItem('a11y-settings');
+        applySettings({});
+        return;
+      }
+
+      localStorage.setItem('a11y-settings', JSON.stringify(settings));
+      applySettings(settings);
+    });
+  });
+
+  function applySettings(s) {
+    document.body.classList.remove('a11y-large', 'a11y-xlarge', 'a11y-contrast', 'a11y-reduce-motion');
+    document.querySelectorAll('.a11y-btn').forEach(b => b.classList.remove('active'));
+
+    if (s.textSize === 'large') {
+      document.body.classList.add('a11y-large');
+      document.querySelector('[data-action="text-large"]')?.classList.add('active');
+    } else if (s.textSize === 'xlarge') {
+      document.body.classList.add('a11y-xlarge');
+      document.querySelector('[data-action="text-xlarge"]')?.classList.add('active');
+    } else {
+      document.querySelector('[data-action="text-normal"]')?.classList.add('active');
+    }
+    if (s.contrast) {
+      document.body.classList.add('a11y-contrast');
+      document.querySelector('[data-action="contrast"]')?.classList.add('active');
+    }
+    if (s.reduceMotion) {
+      document.body.classList.add('a11y-reduce-motion');
+      document.querySelector('[data-action="reduce-motion"]')?.classList.add('active');
+    }
+  }
+</script>
+
+</body>
+</html>
