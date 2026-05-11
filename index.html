@@ -793,6 +793,73 @@
     transform: translateY(0);
   }
 
+  /* ========== Social links ========== */
+  .social-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 36px;
+  }
+  .social-row .sep {
+    color: var(--brown-soft);
+    opacity: 0.5;
+    font-weight: 300;
+  }
+  .hero-social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    background: var(--cream-warm);
+    color: var(--green-deep);
+    border: 1px solid rgba(74, 124, 46, 0.2);
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.97rem;
+    transition: all 0.25s var(--transition);
+  }
+  .hero-social a:hover {
+    background: var(--green-deep);
+    color: var(--cream);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+  }
+  .hero-social a.fb:hover { background: #1877F2; border-color: #1877F2; }
+
+  .quote-social {
+    margin-top: 32px;
+    padding-top: 26px;
+    border-top: 1px solid rgba(254, 252, 246, 0.18);
+    position: relative;
+    z-index: 1;
+  }
+  .quote-social p {
+    color: var(--gold-soft);
+    font-size: 0.98rem;
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+  .quote-social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 22px;
+    background: rgba(254, 252, 246, 0.12);
+    color: var(--cream);
+    border: 1px solid rgba(254, 252, 246, 0.3);
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.96rem;
+    transition: all 0.25s var(--transition);
+  }
+  .quote-social a:hover {
+    background: #1877F2;
+    border-color: #1877F2;
+    transform: translateY(-2px);
+  }
+
   /* ========== Mobile tweaks ========== */
   @media (max-width: 640px) {
     .hero { padding: 50px 0 70px; }
@@ -879,6 +946,16 @@
           <span class="stat-num">7+</span>
           <span class="stat-label">קטגוריות מוצרים</span>
         </div>
+      </div>
+
+      <div class="social-row hero-social">
+        <a href="https://www.facebook.com/share/1Aw6MD8aHa/?mibextid=wwXIfr" target="_blank" rel="noopener" class="fb" aria-label="עקבו אחרינו בפייסבוק">
+          <span>📘</span><span>פייסבוק</span>
+        </a>
+        <span class="sep" aria-hidden="true">·</span>
+        <a href="https://wa.me/972542521979?text=היי נטלי! אשמח לפרטים על מארזי החווה 🎁" aria-label="צרו קשר בווטסאפ">
+          <span>📱</span><span>ווטסאפ</span>
+        </a>
       </div>
     </div>
   </div>
@@ -1022,6 +1099,13 @@
         <span>💬</span>
         <span>דברו עם נטלי בווטסאפ</span>
       </a>
+
+      <div class="quote-social">
+        <p>עקבו אחרינו בפייסבוק לעדכונים ותמונות חדשות 🌿</p>
+        <a href="https://www.facebook.com/share/1Aw6MD8aHa/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="דף הפייסבוק של החווה">
+          <span>📘</span><span>עקבו בפייסבוק</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -1061,7 +1145,8 @@
           <strong>ניהול:</strong> ד"ר אילן אביטבול<br/>
           <strong>הזמנות:</strong> נטלי<br/>
           <a href="https://wa.me/972542521979?text=היי נטלי! אשמח לפרטים על מארזי החווה 🎁">💬 ווטסאפ נטלי: 054-252-1979</a><br/>
-          <a href="tel:+972542521979">📱 נטלי: 054-252-1979</a>
+          <a href="tel:+972542521979">📱 נטלי: 054-252-1979</a><br/>
+          <a href="https://www.facebook.com/share/1Aw6MD8aHa/?mibextid=wwXIfr" target="_blank" rel="noopener">📘 עקבו בפייסבוק</a>
         </p>
       </div>
 
