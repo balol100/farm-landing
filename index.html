@@ -492,7 +492,16 @@
     display: block;
     transition: transform 0.6s var(--transition);
   }
+  .product-photo.contain {
+    background: linear-gradient(135deg, var(--cream-warm), var(--cream-deep));
+  }
+  .product-photo.contain img {
+    object-fit: contain;
+    object-position: center center;
+    padding: 14px;
+  }
   .product-card:hover .product-photo img { transform: scale(1.06); }
+  .product-card:hover .product-photo.contain img { transform: scale(1.03); }
   .product-photo .badge {
     position: absolute;
     top: 14px;
@@ -1045,6 +1054,16 @@
     .float-wa { width: 56px; height: 56px; font-size: 1.6rem; bottom: 20px; left: 20px; }
     .a11y-toggle { width: 48px; height: 48px; font-size: 1.25rem; bottom: 20px; right: 20px; }
     .a11y-panel { bottom: 78px; right: 20px; width: calc(100% - 40px); max-width: 280px; }
+
+    /* Larger, clearer product photos on mobile */
+    .product-photo { height: 300px; }
+    .product-photo img { object-position: center center; }
+    .product-card.featured .product-photo { height: 360px; }
+    .product-photo.contain img { padding: 18px; }
+  }
+  @media (max-width: 420px) {
+    .product-photo { height: 280px; }
+    .product-card.featured .product-photo { height: 320px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -1168,23 +1187,24 @@
       <!-- Featured: Wine -->
       <article class="product-card featured reveal">
         <div class="product-photo">
-          <img src="/images/wine.jpeg" alt="בקבוק יין יקב החווה — קברנה מרלו 2024" loading="lazy" decoding="async" />
+          <img src="/images/wine.jpeg" alt="בקבוק יין מיקב החווה" loading="lazy" decoding="async" />
           <span class="badge" aria-hidden="true">🍷</span>
         </div>
-        <h3>יין מהיקב — קברנה מרלו</h3>
-        <p>יין אדום יבש, קברנה־מרלו 2024, בקבוק 750 מ"ל. בוצר בחווה, מותסס וטופל בידי מורי החווה והתלמידים — כל בקבוק נושא איתו את סיפור היקב משנת 2015.</p>
-        <span class="product-tag">Cabernet · Merlot 2024 · 750ml</span>
+        <h3>יין מהיקב</h3>
+        <p>יינות בעבודת יד מיקב החווה — מגוון זנים בהתאם לעונה ולבציר. בוצרים, מותססים וטופלים בידי מורי החווה והתלמידים, כל בקבוק נושא איתו את סיפור היקב משנת 2015.</p>
+        <span class="product-tag">בעבודת יד · יקב החווה</span>
         <span class="product-price">יין קטן 25 <small>ש"ח</small> · 750ml לפי הזמנה</span>
       </article>
 
       <article class="product-card reveal">
         <div class="product-photo">
-          <img src="/images/cream.jpeg" alt="צנצנות משחת טיפוח של החווה" loading="lazy" decoding="async" />
-          <span class="badge" aria-hidden="true">🧴</span>
+          <img src="/images/cream.jpeg" alt="צנצנות משחת לוונדר של החווה" loading="lazy" decoding="async" />
+          <span class="badge" aria-hidden="true">💜</span>
         </div>
-        <h3>משחת קוקוס טבעית</h3>
-        <p>משחת קוקוס לטיפוח ולטיפול בבעיות עור. בעבודת יד, ברכזת קוקוס איכותית, באריזות זכוכית קטנות ונוחות.</p>
-        <span class="product-tag">בעבודת יד · טבעי</span>
+        <h3>משחת לוונדר</h3>
+        <p>משחת לוונדר טבעית לטיפוח העור ולהקלה על גירויים ובעיות עור. בעבודת יד, עם מיצוי לוונדר עדין, באריזות זכוכית קטנות ונוחות לשימוש יומיומי.</p>
+        <span class="product-tag">לוונדר · בעבודת יד</span>
+        <span class="product-price">30 <small>ש"ח</small></span>
       </article>
 
       <article class="product-card reveal">
@@ -1199,7 +1219,7 @@
       </article>
 
       <article class="product-card reveal">
-        <div class="product-photo">
+        <div class="product-photo contain">
           <img src="/images/spray.jpeg" alt="בקבוקי תרסיס נגד יתושים מתוצרת החווה" loading="lazy" decoding="async" />
           <span class="badge" aria-hidden="true">🌿</span>
         </div>
