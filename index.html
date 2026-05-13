@@ -535,6 +535,28 @@
     border-radius: 999px;
     letter-spacing: 0.02em;
   }
+  .product-price {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-top: 14px;
+    margin-inline-start: 8px;
+    padding: 6px 14px;
+    background: linear-gradient(135deg, var(--green-deep), var(--green-mid));
+    color: var(--cream);
+    font-size: 0.88rem;
+    font-weight: 700;
+    border-radius: 999px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.02em;
+    box-shadow: 0 4px 10px -4px rgba(45, 80, 22, 0.4);
+  }
+  .product-price small { font-weight: 500; font-size: 0.85em; opacity: 0.9; }
+  .product-card.featured .product-price {
+    background: var(--gold);
+    color: #3a2510;
+    box-shadow: 0 4px 12px -4px rgba(201, 168, 76, 0.5);
+  }
 
   /* Featured wine card */
   .product-card.featured {
@@ -1044,6 +1066,7 @@
       </div>
     </div>
     <nav class="site-nav" aria-label="ניווט ראשי">
+      <a href="pricing.html" class="nav-link"><span aria-hidden="true">💰</span><span>מחירון</span></a>
       <a href="gallery.html" class="nav-link"><span aria-hidden="true">📸</span><span>גלריה</span></a>
       <a href="https://wa.me/972542521979?text=היי נטלי! ראיתי את מוצרי החווה ואשמח לשמוע על המארזים שלכם 🌿" class="nav-cta" aria-label="צרו קשר עם נטלי בווטסאפ">
         <span>צרו קשר</span>
@@ -1135,6 +1158,7 @@
         <h3>יין מהיקב — קברנה מרלו</h3>
         <p>יין אדום יבש, קברנה־מרלו 2024, בקבוק 750 מ"ל. בוצר בחווה, מותסס וטופל בידי מורי החווה והתלמידים — כל בקבוק נושא איתו את סיפור היקב משנת 2015.</p>
         <span class="product-tag">Cabernet · Merlot 2024 · 750ml</span>
+        <span class="product-price">יין קטן 25 <small>ש"ח</small> · 750ml לפי הזמנה</span>
       </article>
 
       <article class="product-card reveal">
@@ -1155,6 +1179,7 @@
         <h3>משחת לוונדר לטיפול בעיות העור</h3>
         <p>משחה ייעודית לטיפוח ולהקלה על בעיות עור — מבוססת שמן זית, שעוות דבורים ומיצוי לוונדר. בעבודת יד, בצנצנות זכוכית קטנות ונוחות לתיק.</p>
         <span class="product-tag">לוונדר · בעבודת יד</span>
+        <span class="product-price">30 <small>ש"ח</small></span>
       </article>
 
       <article class="product-card reveal">
@@ -1175,6 +1200,7 @@
         <h3>שמן עיסוי טבעי</h3>
         <p>שמן עיסוי לחיזוק המערכת החיסונית. מבוסס שמני אקליפטוס וצמחי מרפא נבחרים, ארוז בבקבוקי טפטפת כהים לשמירה על הסגולות.</p>
         <span class="product-tag">חיזוק חיסוני · בקבוק טפטפת</span>
+        <span class="product-price">30 <small>ש"ח</small></span>
       </article>
 
       <article class="product-card reveal">
@@ -1185,6 +1211,7 @@
         <h3>צמחי תבלין ונוי</h3>
         <p>עציצי נענע, אלוורה, סנסוויריה, סוקולנטים, צמח העכביש ועוד תוצרת חיה שגדלה אצלנו בחווה. מושלמים למתנה אישית, לחממת הצוות או להבאת קצת ירוק למשרד.</p>
         <span class="product-tag">צמחיה חיה · גידול עצמי</span>
+        <span class="product-price">תבלין 8 <small>ש"ח</small> · נוי (עציץ 12) 10 <small>ש"ח</small></span>
       </article>
 
       <article class="product-card reveal">
@@ -1192,6 +1219,7 @@
         <h3>חליטות צמחים</h3>
         <p>חליטות צמחים ארוזות, ותוצרת מקומית נוספת מהשדה. תערובות מרגיעות, מרעננות ומחזקות — לכוס חמה בחדר המורים.</p>
         <span class="product-tag">חליטות · תוצרת מקומית</span>
+        <span class="product-price">שקית תה 10 <small>ש"ח</small></span>
       </article>
 
       <article class="product-card reveal">
@@ -1202,6 +1230,7 @@
         <h3>מארזים מעוצבים</h3>
         <p>מארזי מתנה מותאמים אישית — לחגים, ליום המורה, לסוף שנה ולכל אירוע מיוחד. שילובים גמישים של מוצרים, באריזות יפות עם נגיעה אישית.</p>
         <span class="product-tag">התאמה אישית · אריזות יפות</span>
+        <span class="product-price">בהתאמה אישית · לפי תקציב</span>
       </article>
     </div>
   </div>
@@ -1359,7 +1388,8 @@
           <a href="#products">משחות וטיפוח</a><br/>
           <a href="#products">חליטות וצמחי תבלין</a><br/>
           <a href="#products">מארזי מתנה</a><br/>
-          <a href="gallery.html">📸 גלריית תמונות</a>
+          <a href="gallery.html">📸 גלריית תמונות</a><br/>
+          <a href="pricing.html">💰 מחירון</a>
         </p>
       </div>
     </div>
