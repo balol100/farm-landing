@@ -167,6 +167,35 @@
   }
   .nav-cta:hover { background: var(--green-mid); transform: translateY(-2px); }
 
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--green-deep);
+    border: 1px solid rgba(74, 124, 46, 0.2);
+    background: var(--cream-warm);
+    transition: all 0.25s var(--transition);
+  }
+  .nav-link:hover {
+    background: var(--green-deep);
+    color: var(--cream);
+    transform: translateY(-2px);
+  }
+  @media (max-width: 540px) {
+    .nav-link { padding: 8px 12px; font-size: 0.85rem; }
+    .nav-link span:last-child { display: none; }
+    .site-nav { gap: 8px; }
+  }
+
   /* ========== Hero ========== */
   .hero {
     position: relative;
@@ -1014,9 +1043,12 @@
         <div style="font-size: 0.75rem; color: var(--brown); font-weight: 500;">באר שבע · מאז 1950</div>
       </div>
     </div>
-    <a href="https://wa.me/972542521979?text=היי נטלי! ראיתי את מוצרי החווה ואשמח לשמוע על המארזים שלכם 🌿" class="nav-cta" aria-label="צרו קשר עם נטלי בווטסאפ">
-      <span>צרו קשר</span>
-    </a>
+    <nav class="site-nav" aria-label="ניווט ראשי">
+      <a href="gallery.html" class="nav-link"><span aria-hidden="true">📸</span><span>גלריה</span></a>
+      <a href="https://wa.me/972542521979?text=היי נטלי! ראיתי את מוצרי החווה ואשמח לשמוע על המארזים שלכם 🌿" class="nav-cta" aria-label="צרו קשר עם נטלי בווטסאפ">
+        <span>צרו קשר</span>
+      </a>
+    </nav>
   </div>
 </header>
 
@@ -1117,6 +1149,16 @@
 
       <article class="product-card reveal">
         <div class="product-photo">
+          <img src="/images/lavender-salve.jpeg" alt="צנצנת משחת לוונדר טבעית של החווה" loading="lazy" decoding="async" />
+          <span class="badge" aria-hidden="true">💜</span>
+        </div>
+        <h3>משחת לוונדר לטיפול בעיות העור</h3>
+        <p>משחה ייעודית לטיפוח ולהקלה על בעיות עור — מבוססת שמן זית, שעוות דבורים ומיצוי לוונדר. בעבודת יד, בצנצנות זכוכית קטנות ונוחות לתיק.</p>
+        <span class="product-tag">לוונדר · בעבודת יד</span>
+      </article>
+
+      <article class="product-card reveal">
+        <div class="product-photo">
           <img src="/images/spray.jpeg" alt="בקבוקי תרסיס נגד יתושים מתוצרת החווה" loading="lazy" decoding="async" />
           <span class="badge" aria-hidden="true">🌿</span>
         </div>
@@ -1136,9 +1178,12 @@
       </article>
 
       <article class="product-card reveal">
-        <div class="product-icon" aria-hidden="true">🌱</div>
-        <h3>צמחי תבלין ועוד</h3>
-        <p>עציצים, צמחי תבלין טריים ועוד תוצרת חיה שגדלה אצלנו בחווה. מושלמים למתנה אישית, לחממת הצוות, או להבאת קצת ירוק למשרד הניהול.</p>
+        <div class="product-photo">
+          <img src="/images/herbs.jpeg" alt="עציץ נענע טרי עם שלט הסבר מתוצרת החווה" loading="lazy" decoding="async" />
+          <span class="badge" aria-hidden="true">🌱</span>
+        </div>
+        <h3>צמחי תבלין ונוי</h3>
+        <p>עציצי נענע, אלוורה, סנסוויריה, סוקולנטים, צמח העכביש ועוד תוצרת חיה שגדלה אצלנו בחווה. מושלמים למתנה אישית, לחממת הצוות או להבאת קצת ירוק למשרד.</p>
         <span class="product-tag">צמחיה חיה · גידול עצמי</span>
       </article>
 
@@ -1150,7 +1195,10 @@
       </article>
 
       <article class="product-card reveal">
-        <div class="product-icon" aria-hidden="true">🎁</div>
+        <div class="product-photo">
+          <img src="/images/gift-box.jpeg" alt="מארז מתנה מעוצב — יין, שמן עיסוי ומשחת לוונדר" loading="lazy" decoding="async" />
+          <span class="badge" aria-hidden="true">🎁</span>
+        </div>
         <h3>מארזים מעוצבים</h3>
         <p>מארזי מתנה מותאמים אישית — לחגים, ליום המורה, לסוף שנה ולכל אירוע מיוחד. שילובים גמישים של מוצרים, באריזות יפות עם נגיעה אישית.</p>
         <span class="product-tag">התאמה אישית · אריזות יפות</span>
@@ -1310,7 +1358,8 @@
           <a href="#products">יין מהיקב</a><br/>
           <a href="#products">משחות וטיפוח</a><br/>
           <a href="#products">חליטות וצמחי תבלין</a><br/>
-          <a href="#products">מארזי מתנה</a>
+          <a href="#products">מארזי מתנה</a><br/>
+          <a href="gallery.html">📸 גלריית תמונות</a>
         </p>
       </div>
     </div>
